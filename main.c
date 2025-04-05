@@ -37,6 +37,8 @@ int main(int argc, char **argv) {
   if (output != expected) {
     fprintf(stderr, "Expected %d moves, got %d\n", expected, output);
     exit(3);
+  } else {
+    fprintf(stderr, "Success in %d moves", output);
   }
 
   return 0;
